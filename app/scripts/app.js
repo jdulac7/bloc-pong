@@ -35,7 +35,7 @@ var update = function() {
   scorePlayer.update();
 };
 
-// give the computer player a max speed & computer position to center of ball 
+// give the computer player a max speed & computer position to center of ball
 Computer.prototype.update = function(ball) {
   var x_pos = ball.x;
   var diff = -((this.paddle.x + (this.paddle.width / 2)) - x_pos);
@@ -203,14 +203,14 @@ function ScorePlayer() {
 }
 
 ScoreComputer.prototype.update = function() {
-  if(this.computerScore === 21) {
+  if(this.computerScore === 10) {
     alert("Computer Won!");
     location.reload();
   }
 }
 
 ScorePlayer.prototype.update = function() {
-  if(this.playerScore === 21) {
+  if(this.playerScore === 10) {
     alert("You Won!");
     location.reload();
   }
